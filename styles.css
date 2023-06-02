@@ -11,9 +11,7 @@ body {
     flex-direction: column;
 }
 
-
 /*Nav Bar*/
-
 .nav {
     display: flex;
     color: #F9FAF8;
@@ -44,9 +42,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /*Hero Part*/
-
 .hero {
     display: flex;
     color: #F9FAF8;
@@ -96,16 +92,13 @@ body {
     height: 350px;
 }
 
-
 /* Content */
-
 .information {
     align-items: center;
 }
 
 .boximage {
     display: flex;
-    /* border: 1px solid gold; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -119,9 +112,7 @@ body {
     margin: 5px 20px 0px 20px;
 }
 
-
 /* Quote */
-
 .quote {
     display: flex;
     flex-direction: column;
@@ -144,9 +135,7 @@ body {
     text-align: right;
 }
 
-
 /* Sign Up Part */
-
 .sign-up {
     background-color: #3882F6;
     margin: 50px 200px;
@@ -188,11 +177,74 @@ h3 {
     font-size: 15px;
 }
 
-
 /* Footer */
-
 .footer {
     background-color: #1F2937;
     color: #fff;
     font-family: 'Roboto', arial;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    /* Stack nav items vertically on small screens */
+    .nav {
+        flex-direction: column;
+    }
+
+    .header-links {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-links a {
+        padding: 15px 0;
+    }
+
+    /* Adjust hero section for smaller screens */
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero-cta {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust destination images */
+    .boximage {
+        flex-direction: column;
+    }
+
+    .boximage img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Adjust quote section */
+    .quote {
+        padding: 0 20px;
+    }
+
+    /* Adjust sign-up part */
+    .sign-up {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .signs-text p, h3 {
+        margin: 0;
+    }
+
+    .signs-button {
+        margin: 20px 0;
+    }
 }
